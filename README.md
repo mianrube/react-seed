@@ -67,3 +67,16 @@ export default {
    "editor.formatOnSave": true,
    "editor.formatOnType": true,
    ```
+
+## Material UI
+
+1. Instalar mui: yarn add @mui/material @emotion/react @emotion/styled
+2. Instalar Roboto font: yarn add @fontsource/roboto
+3. Importar css de fuentes en main.tsx, antes de la importación de index.css:
+   ```ts
+   import '@fontsource/roboto/300.css';
+   import '@fontsource/roboto/400.css';
+   import '@fontsource/roboto/500.css';
+   import '@fontsource/roboto/700.css';
+   ```
+4. Resetear CSS con el uso de: <CssBaseline /> (en maint.tsx)
