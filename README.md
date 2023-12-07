@@ -58,8 +58,9 @@ export default {
 
 1. En package.json, añadir en la sección scripts el comando de format: "format": "prettier --write ./src"
 2. Conveniente ejecutar el formato: yarn format
-3. Configurar autoformateo de ESLint en VSCode para que aplique las reglas automáticamente:
+3. Configurar autoformateo de ESLint en VSCode para que aplique las reglas automáticamente con prettier como formateador por defecto:
    ```json
+   "editor.defaultFormatter": "esbenp.prettier-vscode",
    "editor.codeActionsOnSave": {
      "source.fixAll.eslint": true
    },
