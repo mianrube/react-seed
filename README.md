@@ -80,3 +80,10 @@ export default {
    import '@fontsource/roboto/700.css';
    ```
 4. Resetear CSS con el uso de: <CssBaseline /> (en maint.tsx)
+
+## Reac Redux Toolkit Query
+
+1. Instalar los paquetes necesarios: yarn add @reduxjs/toolkit react-redux
+2. Crear el store base en /src/store/store.ts
+3. Crear los hooks para facilitar el acceso a state y dispatch en /src/store/storeHooks.ts
+4. Proveer el store en main.tsx
